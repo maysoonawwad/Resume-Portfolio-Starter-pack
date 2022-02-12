@@ -2,6 +2,15 @@ import React from "react";
 import TypeWriter from "react-typewriter";
 
 const Header = ({ data }) => {
+  const particlesInit = (main) => {
+    console.log(main);
+
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
   if (data) {
     var name = data.name;
     var occupation = data.occupation;
@@ -49,11 +58,7 @@ const Header = ({ data }) => {
               Works
             </a>
           </li>
-          <li>
-            <a className="smoothscroll" href="#testimonials">
-              Testimonials
-            </a>
-          </li>
+         
           <li>
             <a className="smoothscroll" href="#contact">
               Contact
@@ -61,25 +66,32 @@ const Header = ({ data }) => {
           </li>
         </ul>
       </nav>
-
+      
       <div className="row banner">
+      <div className="banner-bg">
         <div className="banner-text">
           <h1 className="responsive-headline">
             <TypeWriter typing={0.5}>{name ? `I'm ${name}.` : null}</TypeWriter>
           </h1>
           <h3>
-            Based in {city}. <span>{occupation}</span>. {description}.
+            Front end developer <span>{occupation}</span>. {description}.
           </h3>
           <hr />
           <ul className="social">{networks}</ul>
         </div>
       </div>
+      </div>
+      
 
       <p className="scrolldown">
         <a className="smoothscroll" href="#about">
           <i className="icon-down-circle"></i>
         </a>
       </p>
+
+
+     
+      
     </header>
   );
 };

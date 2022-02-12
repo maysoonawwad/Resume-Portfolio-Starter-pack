@@ -51,23 +51,29 @@ header .banner {
    display: inline-block;
    vertical-align: middle;
    margin: 0 auto;
-   width: 85%;
+   width: 70%;
    padding-bottom: 30px;
    text-align: center;
+  
 }
 
-header .banner-text { width: 100%; }
+header .banner-text { 
+   width: 100%;
+   padding: 20px;
+ }
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
+   font: 90px/1.1em 'opensans-semibold', sans-serif;
+   
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
-   margin: 0 auto;
+   font: 18px/1.9em  ,  'librebaskerville-regular', serif;
+   color: #fff;
+   margin: 20px auto;
+  
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
 }
@@ -76,15 +82,16 @@ header .banner-text h3 a {
    color: #fff;
 }
 header .banner-text hr {
-   width: 60%;
-   margin: 18px auto 24px auto;
+   width: 70%;
+   margin: 25px auto 24px auto;
    border-color: #2F2D2E;
    border-color: rgba(150, 150, 150, .1);
 }
 
+
 /* header social links */
 header .social {
-   margin: 24px 0;
+   margin: 35px 0;
    padding: 0;
    font-size: 30px;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
@@ -95,7 +102,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a:hover { color: green; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -119,6 +126,15 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #11ABB0; }
 
+header .banner-bg{
+   background-color: rgba(0, 0, 0, 0.4);
+   
+   height: 350px;
+   padding: 10px;
+   padding-top: 20px;
+   border-radius: 20px;
+   
+}
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
@@ -436,7 +452,8 @@ ul#nav li.current a { color: #F06000; }
    background: #fff;
    overflow: hidden;
    position: relative;
-
+   border-radius: 5%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -455,7 +472,7 @@ ul#nav li.current a { color: #F06000; }
    top: 0;
    width: 100%;
    height: 100%;
-
+   
 	opacity: 0;
 	-moz-opacity: 0;
 	filter:alpha(opacity=0);
@@ -466,6 +483,11 @@ ul#nav li.current a { color: #F06000; }
 	transition: opacity 0.3s ease-in-out;
 
    background: url(../images/overlay-bg.png) repeat;
+}
+.portfolio-item .item-wrap .portfolio-img{
+   height: 130px;
+   width: 500px;
+
 }
 .portfolio-item .item-wrap .link-icon {
    display: block;
