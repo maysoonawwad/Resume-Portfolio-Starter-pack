@@ -38,6 +38,7 @@
         "url": "https://github.com/maysoonawwad",
         "className": "fa fa-github"
       }
+     
     ]
   },
   "resume": {
@@ -110,6 +111,12 @@
         "category": "",
         "image": "airbnb.jpg",
         "url": "https://airbnb-clone-21.netlify.app/"
+      },
+      {
+        "title": "netflix homepage clone with (Reactjs)",
+        "category": "",
+        "image": "netflix.jpg",
+        "url": "https://netflix-2022.netlify.app/"
       }
     ]
   }
